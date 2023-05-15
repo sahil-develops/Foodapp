@@ -1,0 +1,114 @@
+.container {
+    background-image: url('../../assets/navbarbg.jpg');
+    background-position:center;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    
+}
+
+.navbar-links li {
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.logo {
+    margin-left: 8rem;
+    width:150px
+}
+
+.profile-section
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 74%;
+    font-size: 5rem;
+    line-height: 10rem;
+    align-items: flex-start;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    }
+.profile-section h1 {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Just Another Hand', cursive;
+    font-weight: 500;
+    margin-top:2rem;
+    padding-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar-links {
+        width: 72%;
+    }
+
+    .logo {
+        width: 70px;
+        margin-left: 1rem;
+    }
+    .container {
+        background-image: url('../../assets/navbarbg2.png');
+        background-position:center;
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+    }
+    .profile-section{
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {  
+  
+    .logo {
+        width: 62px;
+        margin-left: 1rem;
+    }
+    .profile-section{
+        font-size: 2.5rem;
+        width: 75%;
+    }
+
+    .profile-section h1{
+margin-bottom: 0;
+    }
+
+    .navbar-links {
+        width: 69%;
+        margin-left: -22px;
+        gap: 9px;
+    }
+
+    .navbar-links li {
+     font-size: 14px;
+     font-weight: 500;
+    }
+    .profile-section h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top:2rem;
+        padding-bottom: 2rem;
+    }
+    
+  }
